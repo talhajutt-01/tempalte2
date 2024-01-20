@@ -1,0 +1,20 @@
+{
+      "images": {
+        "img1": "img/logo.png",
+        "img2": "img/4.jpg",
+        "img3": "img/3.jpg",
+        "img4": "img/1.jpg",
+        "img5": "img/2.jpg",
+        "img7": "img/4.jpg",
+        "img8": "img/5.jpg",
+        "img9": "img/portfolio1.jpg",
+        "img10": "img/portfolio2.jpg",
+        "img11": "img/portfolio3.jpg",
+        "img12": "img/portfolio4.jpg",
+        "img13": "img/portfolio5.jpg",
+        "img14": "img/portfolio6.jpg",
+        "img15": "img/portfolio7.jpg",
+        "img16": "img/portfolio8.jpg",
+        "img17": "img/portfolio9.jpg"
+     }
+}

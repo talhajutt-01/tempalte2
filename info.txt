@@ -3,18 +3,22 @@
         "title": "Updated Echoes"
     },
     "nav": {
+        //another section all elements are links
         "nav0": "home",
         "nav1": "About",
         "nav2": "portfolio",
         "nav3": "contact"
     },
     "h": {
+         //another section all elements are text
         "h0": "Update Simple is beautiful"
     },
     "c": {
+         //another section all elements are  text for contac
         "c0": "Update What the hell are you waiting for?"
     },
     "about": {
+         //another section all elements are text
         "a0": "update simplicity, purity, because",
         "a1": "Update My story",
         "a2": "update Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.",
@@ -23,6 +27,7 @@
         "a5": "update Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat."
     },
     "clients": {
+         //another section all elements are text
         "clients": "update clients",
         "clients0": "update bugati",
         "c1": "update Vouge",
@@ -39,6 +44,7 @@
     },
 
      "color":{
+         //change color
         "nav":"red",
         "contact":"grey",
         "about":"red",
@@ -47,13 +53,23 @@
      },
 
      "images": {
+        //image for logo 
         "img1": "img/logo.png",
+
+        //images for slides at index
         "img2": "img/4.jpg",
         "img3": "img/3.jpg",
         "img4": "img/1.jpg",
         "img5": "img/2.jpg",
+
+
+        //image at about 
         "img7": "img/4.jpg",
+
+        image at contact
         "img8": "img/5.jpg",
+
+        //image at portfolio
         "img9": "img/portfolio1.jpg",
         "img10": "img/portfolio2.jpg",
         "img11": "img/portfolio3.jpg",

@@ -30,6 +30,34 @@ const c9 = document.getElementById('c9');
 const c10 = document.getElementById('c10');
 const c11 = document.getElementById('c11');
 
+const g0 = document.getElementById('nav');
+const g1 = document.getElementById('conatct');
+const g2 = document.getElementById('about');
+const g3 = document.getElementById('portfolio');
+
+
+
+const img1 = document.getElementById('img1');
+const img2 = document.getElementById('img2');
+const img3 = document.getElementById('img3');
+const img4 = document.getElementById('img4');
+const img5 = document.getElementById('img5');
+const img6 = document.getElementById('img6');
+const img7 = document.getElementById('img7');
+const img8 = document.getElementById('img8');
+const img9 = document.getElementById('img8');
+const img10 = document.getElementById('img8');
+const img11 = document.getElementById('img8');
+const img12 = document.getElementById('img8');
+const img13 = document.getElementById('img8');
+const img14 = document.getElementById('img8');
+const img15 = document.getElementById('img8');
+const img16 = document.getElementById('img8');
+const img17 = document.getElementById('img8');
+
+
+
+
 const paragraph1 = document.getElementById('paragraph1');
 
 
@@ -44,6 +72,15 @@ function updateContent(element, newValue) {
     // Update content for the <a> tag
     linkElement.innerText = newValue;
   }
+
+  function updateImageSrc(imageElement, newSrc) {
+    // Update the src attribute of the image element
+    imageElement.src = newSrc;
+}
+function updateBackgroundColor(element, newColor) {
+  // Update the background color for the element
+  element.style.backgroundColor = newColor;
+}
   
   // Fetch JSON data from the text file
   function updatePageContent(pageName) {
@@ -85,8 +122,12 @@ function updateContent(element, newValue) {
 
             if (fileName === 'index.html') {
                 updateContent(h0, jsonData.h.h0);
+                updateBackgroundColor(g0, jsonData.color.nav);
+                
             } else if (fileName === 'contact.html') {
                 updateContent(c0, jsonData.c.c0);
+                updateBackgroundColor(g0, jsonData.color.nav);
+                updateBackgroundColor(g1, jsonData.color.protfolio);
             } else if (fileName === 'about.html') {
                 updateContent(a0, jsonData.about.a0);
                 updateContent(a1, jsonData.about.a1);
@@ -108,6 +149,22 @@ function updateContent(element, newValue) {
                 updateContent(c9, jsonData.clients.c9);
                 updateContent(c10, jsonData.clients.c10);
                 updateContent(c11, jsonData.clients.c11);
+                updateBackgroundColor(g0, jsonData.color.nav);
+                updateBackgroundColor(g2, jsonData.color.about);
+            }
+            else if (fileName === 'portfoloi.html') {
+                updateImageSrc(img9, jsonData.images.img9);
+                updateImageSrc(img10, jsonData.images.img10);
+                updateImageSrc(img11, jsonData.images.img11);
+                updateImageSrc(img12, jsonData.images.img12);
+                updateImageSrc(img13, jsonData.images.img13);
+                updateImageSrc(img14, jsonData.images.img14);
+                updateImageSrc(img15, jsonData.images.img15);
+                updateImageSrc(img16, jsonData.images.img16);
+                updateImageSrc(img17, jsonData.images.img17);
+
+                updateBackgroundColor(g0, jsonData.color.nav);
+                updateBackgroundColor(g3, jsonData.color.protfolio);
             }
         })
         .catch(error => console.error('Error fetching or parsing JSON:', error));
