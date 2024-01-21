@@ -85,86 +85,96 @@ function updateBackgroundColor(element, newColor) {
   // Fetch JSON data from the text file
   function updatePageContent(pageName) {
     console.log('Updating content for page:', pageName);
-    fetch('t.txt')
-        .then(response => response.json())
-        .then(jsonData => {
-            // Update content based on the current page
-            updateContent(title, jsonData.title.title);
-            updateContent(nav0, jsonData.nav.nav0);
-            updateContent(nav1, jsonData.nav.nav1);
-            updateContent(nav2, jsonData.nav.nav2);
-            updateContent(nav3, jsonData.nav.nav3);
-            updateContent(h0, jsonData.h.h0);
-            updateContent(c0, jsonData.c.c0);
-            updateContent(a0, jsonData.about.a0);
-            updateContent(a1, jsonData.about.a1);
-            updateContent(a2, jsonData.about.a2);
-            updateContent(a3, jsonData.about.a3);
-            updateContent(a4, jsonData.about.a4);
-            updateContent(a5, jsonData.about.a5);
+    const fetchJson1 = fetch('t.txt')
+    .then(response => response.json());
 
-            updateContent(clients, jsonData.clients.clients);
-            updateContent(clients0, jsonData.clients.clients0);
-            updateContent(c1, jsonData.clients.c1);
-            updateContent(c2, jsonData.clients.c2);
-            updateContent(c3, jsonData.clients.c3);
-            updateContent(c4, jsonData.clients.c4);
-            updateContent(c5, jsonData.clients.c5);
-            updateContent(c6, jsonData.clients.c6);
-            updateContent(c7, jsonData.clients.c7);
-            updateContent(c8, jsonData.clients.c8);
-            updateContent(c9, jsonData.clients.c9);
-            updateContent(c10, jsonData.clients.c10);
-            updateContent(c11, jsonData.clients.c11);
+// Fetch the second JSON file
+const fetchJson2 = fetch('image.txt')
+    .then(response => response.json());
+
+// Wait for both fetch operations to complete
+Promise.all([fetchJson1, fetchJson2])
+    .then(jsonDataArray => {
+        // Merge the data from both JSON files
+        const mergedData = Object.assign({}, ...jsonDataArray);
+
+            // Update content based on the current page
+            updateContent(title, mergedData.title.title);
+            updateContent(nav0, mergedData.nav.nav0);
+            updateContent(nav1, mergedData.nav.nav1);
+            updateContent(nav2, mergedData.nav.nav2);
+            updateContent(nav3, mergedData.nav.nav3);
+            updateContent(h0, mergedData.h.h0);
+            updateContent(c0, mergedData.c.c0);
+            updateContent(a0, mergedData.about.a0);
+            updateContent(a1, mergedData.about.a1);
+            updateContent(a2, mergedData.about.a2);
+            updateContent(a3, mergedData.about.a3);
+            updateContent(a4, mergedData.about.a4);
+            updateContent(a5, mergedData.about.a5);
+
+            updateContent(clients, mergedData.clients.clients);
+            updateContent(clients0, mergedData.clients.clients0);
+            updateContent(c1, mergedData.clients.c1);
+            updateContent(c2, mergedData.clients.c2);
+            updateContent(c3, mergedData.clients.c3);
+            updateContent(c4, mergedData.clients.c4);
+            updateContent(c5, mergedData.clients.c5);
+            updateContent(c6, mergedData.clients.c6);
+            updateContent(c7, mergedData.clients.c7);
+            updateContent(c8, mergedData.clients.c8);
+            updateContent(c9, mergedData.clients.c9);
+            updateContent(c10, mergedData.clients.c10);
+            updateContent(c11, mergedData.clients.c11);
 
             // Extract the filename from the path
             const fileName = pageName.split('/').pop();
 
             if (fileName === 'index.html') {
-                updateContent(h0, jsonData.h.h0);
-                updateBackgroundColor(g0, jsonData.color.nav);
+                updateContent(h0, mergedData.h.h0);
+                updateBackgroundColor(g0, mergedData.color.nav);
                 
             } else if (fileName === 'contact.html') {
-                updateContent(c0, jsonData.c.c0);
-                updateBackgroundColor(g0, jsonData.color.nav);
-                updateBackgroundColor(g1, jsonData.color.protfolio);
+                updateContent(c0, mergedData.c.c0);
+                updateBackgroundColor(g0, mergedData.color.nav);
+                updateBackgroundColor(g1, mergedData.color.protfolio);
             } else if (fileName === 'about.html') {
-                updateContent(a0, jsonData.about.a0);
-                updateContent(a1, jsonData.about.a1);
-                updateContent(a2, jsonData.about.a2);
-                updateContent(a3, jsonData.about.a3);
-                updateContent(a4, jsonData.about.a4);
-                updateContent(a5, jsonData.about.a5);
+                updateContent(a0, mergedData.about.a0);
+                updateContent(a1, mergedData.about.a1);
+                updateContent(a2, mergedData.about.a2);
+                updateContent(a3, mergedData.about.a3);
+                updateContent(a4, mergedData.about.a4);
+                updateContent(a5, mergedData.about.a5);
 
-                updateContent(clients, jsonData.clients.clients);
-                updateContent(clients0, jsonData.clients.clients0);
-                updateContent(c1, jsonData.clients.c1);
-                updateContent(c2, jsonData.clients.c2);
-                updateContent(c3, jsonData.clients.c3);
-                updateContent(c4, jsonData.clients.c4);
-                updateContent(c5, jsonData.clients.c5);
-                updateContent(c6, jsonData.clients.c6);
-                updateContent(c7, jsonData.clients.c7);
-                updateContent(c8, jsonData.clients.c8);
-                updateContent(c9, jsonData.clients.c9);
-                updateContent(c10, jsonData.clients.c10);
-                updateContent(c11, jsonData.clients.c11);
-                updateBackgroundColor(g0, jsonData.color.nav);
-                updateBackgroundColor(g2, jsonData.color.about);
+                updateContent(clients, mergedData.clients.clients);
+                updateContent(clients0, mergedData.clients.clients0);
+                updateContent(c1, mergedData.clients.c1);
+                updateContent(c2, mergedData.clients.c2);
+                updateContent(c3, mergedData.clients.c3);
+                updateContent(c4, mergedData.clients.c4);
+                updateContent(c5, mergedData.clients.c5);
+                updateContent(c6, mergedData.clients.c6);
+                updateContent(c7, mergedData.clients.c7);
+                updateContent(c8, mergedData.clients.c8);
+                updateContent(c9, mergedData.clients.c9);
+                updateContent(c10, mergedData.clients.c10);
+                updateContent(c11, mergedData.clients.c11);
+                updateBackgroundColor(g0, mergedData.color.nav);
+                updateBackgroundColor(g2, mergedData.color.about);
             }
             else if (fileName === 'portfoloi.html') {
-                updateImageSrc(img9, jsonData.images.img9);
-                updateImageSrc(img10, jsonData.images.img10);
-                updateImageSrc(img11, jsonData.images.img11);
-                updateImageSrc(img12, jsonData.images.img12);
-                updateImageSrc(img13, jsonData.images.img13);
-                updateImageSrc(img14, jsonData.images.img14);
-                updateImageSrc(img15, jsonData.images.img15);
-                updateImageSrc(img16, jsonData.images.img16);
-                updateImageSrc(img17, jsonData.images.img17);
+                updateImageSrc(img9, mergedData.images.img9);
+                updateImageSrc(img10, mergedData.images.img10);
+                updateImageSrc(img11, mergedData.images.img11);
+                updateImageSrc(img12, mergedData.images.img12);
+                updateImageSrc(img13, mergedData.images.img13);
+                updateImageSrc(img14, mergedData.images.img14);
+                updateImageSrc(img15, mergedData.images.img15);
+                updateImageSrc(img16, mergedData.images.img16);
+                updateImageSrc(img17, mergedData.images.img17);
 
-                updateBackgroundColor(g0, jsonData.color.nav);
-                updateBackgroundColor(g3, jsonData.color.protfolio);
+                updateBackgroundColor(g0, mergedData.color.nav);
+                updateBackgroundColor(g3, mergedData.color.protfolio);
             }
         })
         .catch(error => console.error('Error fetching or parsing JSON:', error));
