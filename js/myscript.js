@@ -105,28 +105,10 @@ Promise.all([fetchJson1, fetchJson2])
             updateContent(nav2, mergedData.nav.nav2);
             updateContent(nav3, mergedData.nav.nav3);
             updateContent(h0, mergedData.h.h0);
-            updateContent(c0, mergedData.c.c0);
-            updateContent(a0, mergedData.about.a0);
-            updateContent(a1, mergedData.about.a1);
-            updateContent(a2, mergedData.about.a2);
-            updateContent(a3, mergedData.about.a3);
-            updateContent(a4, mergedData.about.a4);
-            updateContent(a5, mergedData.about.a5);
+            
+       
 
-            updateContent(clients, mergedData.clients.clients);
-            updateContent(clients0, mergedData.clients.clients0);
-            updateContent(c1, mergedData.clients.c1);
-            updateContent(c2, mergedData.clients.c2);
-            updateContent(c3, mergedData.clients.c3);
-            updateContent(c4, mergedData.clients.c4);
-            updateContent(c5, mergedData.clients.c5);
-            updateContent(c6, mergedData.clients.c6);
-            updateContent(c7, mergedData.clients.c7);
-            updateContent(c8, mergedData.clients.c8);
-            updateContent(c9, mergedData.clients.c9);
-            updateContent(c10, mergedData.clients.c10);
-            updateContent(c11, mergedData.clients.c11);
-
+         
             // Extract the filename from the path
             const fileName = pageName.split('/').pop();
 

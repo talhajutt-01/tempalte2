@@ -9,41 +9,38 @@
         "nav3": "contact"
     },
     "h": {
-        "h0": "Update Simple is beautiful"
+        "h0": "Simple is beautiful"
     },
     "c": {
-        "c0": "Update What the hell are you waiting for?"
+        "c0": "What the hell are you waiting for?"
     },
     "about": {
-        "a0": "update simplicity, purity, because",
-        "a1": "Update My story",
-        "a2": "update Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.",
-        "a3": "update Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor.",
-        "a4": "update Services",
-        "a5": "update Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat."
+        "a0": "simplicity, purity, because",
+        "a1": "My story",
+        "a2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.",
+        "a3": "Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor.",
+        "a4": "Services",
+        "a5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat."
     },
     "clients": {
-        "clients": "update clients",
-        "clients0": "update bugati",
-        "c1": "update Vouge",
-        "c2": "update Class",
-        "c3": "update Holliser",
-        "c4": "update Zara",
-        "c5": "update Coca Cola",
-        "c6": "update Ferrari",
-        "c7": "update Mercedes Benz",
-        "c8": "update Tiger",
-        "c9": "update Capcom",
-        "c10": "update Zrar Home",
-        "c11": "update Martini"
+        "clients": "clients",
+        "clients0": "bugati",
+        "c1": "Vouge",
+        "c2": "Class",
+        "c3": "Holliser",
+        "c4": "Zara",
+        "c5": "Coca Cola",
+        "c6": "Ferrari",
+        "c7": "Mercedes Benz",
+        "c8": "Tiger",
+        "c9": "Capcom",
+        "c10": "Zrar Home",
+        "c11": "Martini"
     },
-
-     "color":{
-        "nav":"red",
-        "contact":"grey",
-        "about":"red",
-        "portfolio":"red"
-      
-     },
-
+    "color": {
+        "nav": ".",
+        "contact": ".",
+        "about": ".",
+        "portfolio": "."
+    }
 }
